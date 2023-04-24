@@ -1,4 +1,4 @@
-package model;
+package com.example.moneytransfer.model;
 
 public class PaymentDetails {
     private double amount;

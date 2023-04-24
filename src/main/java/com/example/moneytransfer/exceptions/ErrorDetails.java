@@ -1,4 +1,4 @@
-package exceptions;
+package com.example.moneytransfer.exceptions;
 
 public class ErrorDetails {
     private String message;
