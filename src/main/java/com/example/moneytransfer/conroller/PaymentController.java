@@ -13,4 +13,12 @@ public class PaymentController {
         this.paymentService = paymentService;
     }
 
+    @PostMapping("/payment")
+    public ResponseEntity<PaymentDetails> makePayment() {
+        PaymentDetails paymentDetails = paymentService.processPayment();
+        return ResponseEntity
+                .status(HttpStatus.ACCEPTED)
+                .body(paymentDetails);
+    }
+
 }
